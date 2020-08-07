@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Gugi&family=Lato&family=Roboto&family=Sofia&display=swap');
+
+:root{
+--light-gray:#2b3032a1;
+--primary-color:#45ccb8;
+--border:#2b303218;
+--text-color:#ff686b;
+--roboto:"Roboto",sans-serif;
+--gugi:"Gugi",cursive;
+--sofia:"Sofia",cursive;
+}
+
+.primary-color{
+	color:var(--primary-color);
+}
+.bg-primary-color{
+	background-color:var(--primary-color)!important;
+}
+.text-color{
+	color:var(--text-color);
+}
+.font-roboto{
+	font-family:var(--roboto);
+}
+.lightblue{
+	color:lightblue;
+}
+header{
+	background-color: var(--primary-color);
+	font-family: var(--roboto);
+}
+header.site-title{
+	font-family:var(--roboto);
+}
+.container.dropdown-toggle,.container.dropdown-item{
+	font-size: 0.7em;
+
+}
+.header-links a{
+	font-size: 0.9em;
+	text-decoration: none;
+	color:white;
+}
+
+.navbar-nav{
+	padding:0.8em 0em;
+}
+
+.navbar-nav .nav-link{
+	font-size: 0.9em;
+	color:var(--light-gray)!important;
+}
+.navbar-nav .nav-item .nav-link{
+	padding:01.3em;
+}
+.img-fluid{
+	object-fit:contain;
+}
+.site-slider{
+	position: relative;
+}
+.position-top{
+	position: absolute;
+	top:30%;
+}
+.site-slider .slider-btn .prev,
+.site-slider .slider-btn .next{
+	background-color: var(--primary-color);
+	padding: 1rem 1.5rem;
+	border-radius: 10rem;
+	color:white;
+	margin:0 1rem;
+	opacity: 0;
+	transition: opacity 1s ease;
+}
+.site-slider .slider-btn .prev,
+.site-slider .slider-btn .next{
+opacity: 1;
+}
+.right-0{
+	right:0;
+}
+.slick-dots{
+	display: flex;;
+	justify-content: center;
+	margin: 0;
+	padding: 1rem 0;
+	list-style-type: none;
+	position: absolute;
+	bottom: 0;
+	right: 50%;
+}
+.slick-dots li{
+	margin: 0 0.6rem;
+}
+.slick-dots button{
+	display: block;
+	width: 0.5rem;
+	height: 0.5rem;
+	padding: 0;
+	border: none;
+	background-color: white;
+	text-indent: -99999px;
+	border-radius: 100%;
+}
+.slick-dots li.slick-active button{
+	transform: scale(2.5);
+	box-shadow: 0px 3px 5px 1px rgba(0,0,0,0.205);
+}
+.img-fluid
+{
+	width: 100%;
+	height:800px;
+
+}
+.store {
+  background: var(--mainGrey);
+}
+.img-container {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.store-img {
+  transition: all 1s ease-in-out;
+}
+.img-container:hover .store-img {
+  transform: scale(1.2);
+}
+.store-item-icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0.75rem;
+  background: var(--mainYellow);
+  border-top-left-radius: 1rem;
+  transition: all 1s ease-in-out;
+  transform: translate(100%, 100%);
+}
+.img-container:hover .store-item-icon {
+  transform: translate(0, 0);
+}
+.store-item-icon:hover {
+  color: var(--mainWhite);
+}
+.store-item-value {
+  color: --mainYellow;
+}
+.notification {
+  background-color: #555;
+  color: white;
+  text-decoration: none;
+  padding: 15px 26px;
+  position: relative;
+  display: inline-block;
+  border-radius: 2px;
+}
+
+.notification:hover {
+  background: lightgreen;	
+}
+
+.notification .badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  padding: 5px 10px;
+  border-radius: 50%;
+  background: red;
+  color: white;
+}
+.products-container{
+	max-width: 650px;
+	justify-content: center;
+	margin: 0 auto;
+	margin-top: 50px;
+	display: flex;
+	flex-wrap: wrap;
+	padding-bottom: 100px;
+}
+.products-container ion-icon{
+	font-size:25px;
+	color:blue;
+	margin-left: 10px;
+	margin-right: 10px;
+	cursor: pointer;
+}
+.product-header{
+	width: 100%;
+	max-width: 650px;
+	display: flex;
+	justify-content: flex-start;
+	border-bottom: 4px solid lightblue;
+	margin: 0 auto;
+}
+.product-title{
+	width: 45%;
+}
+.price{
+	width: 20%;
+	border-bottom: 1px solid lightgrey;
+	display: flex;
+	align-items: center;
+
+}
+.total{
+	width: 10%;
+	border-bottom: 1px solid lightgrey;
+	display: flex;
+	align-items: center;
+}
+
+.quantity{
+	width: 25%;
+	border-bottom: 1px solid lightgrey;
+	display: flex;
+	align-items: center;
+}
+
+.product{
+	width:40%;
+	display: flex;
+	justify-content:center;
+	align-items: flex-start;
+	padding: 10px 0;
+	border-bottom: 1px solid lightgrey;
+}
+.product ion-icon{
+	cursor: pointer;
+}
+.products{
+	width:100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+.products img{
+	width:75px;
+}
+.basketTotalContainer{
+	display: flex;
+	justify-content:center;
+	width: 100%;
+	padding: 10px 0;
+}
+.basketTotalTitle{
+	width:60%;
+}
+.basketTotal{
+	width: 0%;
+}
